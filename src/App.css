@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Pushster', cursive;
+}
+
+.Navbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0px;
+    height: 7rem;
+    color: white;
+   
+    background-color: rgb(223, 155, 223);
+
+
+}
+
+.Nav-link{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.Nav-link li{
+    margin: 0, 1rem;
+}
+
+.Nav-link li a{
+    padding: 0.5rem, 2rem;
+    color: white;
+    font-size: 2rem;
+    transition: .2s linear;
+}
+
+
+
+
+.btnn{
+    display: none;
+}
+
+
+@media (max-width: 795px) {
+
+   .Nav-link{
+       display: none;
+   }
+
+   .mobile-nav-link{
+    position: absolute;
+    top: 75px;
+    left: 0;
+    display: block;
+    list-style: none;
+    background-color: blueviolet;
+    transition: all 0.5s ease-out;
+
+    
+    width: 100%;
+   }
+
+ 
+
+   .btnn{
+       display: block;
+       font-size: 1rem;
+   }
+}
